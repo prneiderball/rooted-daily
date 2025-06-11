@@ -1,12 +1,10 @@
 @import url(./normalize.css);
 
-/* Block: app */
 .app__title {
   font-size: 2rem;
   text-align: center;
 }
 
-/* Block: verse */
 .verse {
   display: flex;
   flex-direction: column;
@@ -19,7 +17,7 @@
   margin-bottom: 1rem;
 }
 
-.verse__reference {
+.verse__ref {
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
