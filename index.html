@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooted Daily</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png" />
   </head>
   <body>
-    <h1 class="title">Rooted Daily</h1>
-    <h2 class="verse-text">Loading, one moment...</h2>
+    <div class="app__container">
+    <h1 class="app__title">Rooted Daily</h1>
+    <section class="verse">
+      <p id="verse-text" class="verse__text">Loading, one moment...</p>
+      <p id="verse-reference" class="verse__reference"></p>
+      <button id="verse-btn" class="verse__btn">Get new verse</button>
+    </section>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

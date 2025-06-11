@@ -1,0 +1,30 @@
+@import url(./normalize.css);
+
+/* Block: app */
+.app__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Block: verse */
+.verse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.verse__text {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.verse__reference {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.verse__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
