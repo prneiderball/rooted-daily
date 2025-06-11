@@ -1,22 +1,25 @@
 {
   "name": "rooted-daily",
   "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
+  "description": "A random Bible verse generator with a devotional UI",
+  "main": "netlify-functions/verse.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "netlify dev",
+    "build": "echo \"No build step\"",
+    "start": "netlify dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prneiderball/rooted-daily.git"
+    "url": "https://github.com/prneiderball/rooted-daily.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bible", "verse", "random", "netlify", "serverless"],
+  "author": "P. R. Neider-Ball",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/prneiderball/rooted-daily/issues"
   },
   "homepage": "https://github.com/prneiderball/rooted-daily#readme",
-  "description": ""
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
 }

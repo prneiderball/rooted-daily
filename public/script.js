@@ -1,4 +1,3 @@
-// public/script.js
 const btn = document.getElementById("verse-btn");
 const verseText = document.getElementById("verse-text");
 const verseRef = document.getElementById("verse-reference");
@@ -16,7 +15,7 @@ async function fetchVerse() {
   refSpan.textContent = "";
 
   try {
-    const res = await fetch("/api/verse");
+    const res = await fetch("/.netlify/functions/verse");
     const data = await res.json();
 
     verseText.textContent = data.text.trim();
