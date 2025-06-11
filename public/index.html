@@ -8,14 +8,23 @@
     <link rel="icon" href="./images/favicon.png" />
   </head>
   <body>
+    <header class="app__header">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </header>
     <div class="app__container">
-    <h1 class="app__title">Rooted Daily</h1>
-    <section class="verse">
-      <p id="verse-text" class="verse__text">Loading, one moment...</p>
-      <p id="verse-reference" class="verse__ref"></p>
-      <button id="verse-btn" class="verse__btn">Get new verse</button>
-    </section>
+      <section class="verse">
+        <p id="verse-text" class="verse__text">Loading, one moment...</p>
+        <p id="verse-reference" class="verse__ref">
+          — <span id="ref-text"></span>
+          <button id="share-btn" class="share-btn" aria-label="Share verse">
+            🔗
+          </button>
+        </p>
+        <button id="verse-btn" class="verse__btn">Get new verse</button>
+      </section>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
