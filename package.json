@@ -4,7 +4,7 @@
   "description": "A random Bible verse generator with a devotional UI",
   "main": "netlify-functions/verse.js",
   "scripts": {
-    "dev": "netlify dev",
+    "dev": "npx netlify-cli dev",
     "build": "echo \"No build step\"",
     "start": "netlify dev"
   },
