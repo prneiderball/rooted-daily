@@ -1,6 +1,17 @@
 const fetch = require("node-fetch");
 
-exports.handler = async function () {
+exports.handler = async function (event) {
+const rawVersion = event.queryStringParameters?.version;
+const version = (rawVersion || "ESV").toUpperCase();
+
+const allowed = ["ESV", "NIV", "KJV", "NASB", "CSB"];
+if (!allowed.includes(version)){
+  return {
+    statusCode: 400,
+    body:JSON.stringify({ error: "Invalid version. Allowed versions are: " + allowed.join(", ")}),
+  }
+}
+
   try {
     const response = await fetch("https://bible-api.com/?random=verse");
 
